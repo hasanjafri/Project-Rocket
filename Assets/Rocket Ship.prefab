@@ -581,8 +581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 612b1a1bdacd041c0960a28415f3b3e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rcsThrust: 250
-  mainThrust: 1111
+  rcsThrust: 300
+  mainThrust: 2000
   levelLoadDelay: 3
   engineSound: {fileID: 8300000, guid: 50d4527130d164f289fe9f25039eb10b, type: 3}
   deathSound: {fileID: 8300000, guid: 40d1c3b3568a843e18f2ca72691dd4a0, type: 3}
