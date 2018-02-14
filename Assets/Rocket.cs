@@ -97,12 +97,17 @@ public class Rocket : MonoBehaviour {
 
     void onDeath()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene(1);
+        if (SceneManager.GetActiveScene().buildIndex + 1 == SceneManager.sceneCountInBuildSettings) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     void RespondToRotateInput()
